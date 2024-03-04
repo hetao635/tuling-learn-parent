@@ -9,15 +9,11 @@
         <module name="study-optimize" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="study-optimize" target="17" />
-      <module name="tuling-learn-parent" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="study-optimize" options="-parameters" />
-      <module name="tuling-learn-parent" options="-parameters" />
+      <module name="tuling-learn-parent" options="" />
     </option>
   </component>
 </project>
