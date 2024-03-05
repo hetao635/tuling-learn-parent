@@ -81,8 +81,8 @@ class ArrayQueue{
             System.out.println("数组队列已满，无法添加...");
             return;
         }
-        front++;
-        arr[front] = number;
+        rear++;
+        arr[rear] = number;
     }
 
     /**
@@ -93,8 +93,8 @@ class ArrayQueue{
             System.out.println("数组队列为空，无法移除元素");
             return;
         }
-        rear++;
-        arr[rear] = 0;
+        front++;
+        arr[front] = 0;
     }
 
     public int showHeadQueue(){
@@ -102,7 +102,7 @@ class ArrayQueue{
             System.out.println("队列为空，无法显示头部数值!");
             return 0;
         }
-        return arr[front];
+        return arr[front +1];
     }
 
     public int number(){
