@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="study-optimize" />
+        <module name="demoModule" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demoModule" options="-parameters" />
       <module name="study-optimize" options="-parameters" />
       <module name="tuling-learn-parent" options="" />
     </option>

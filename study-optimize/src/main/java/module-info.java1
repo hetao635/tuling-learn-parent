@@ -1,0 +1,12 @@
+module com.tuling.jvm.jdk17.demomdule{
+    requires demoModule1;
+    requires junit;
+    requires org.yaml.snakeyaml;
+    requires spring.boot;
+    requires spring.boot.autoconfigure;
+
+    exports com.tuling.jvm.jdk17;
+    exports com.tuling.jvm.day09;
+
+    uses com.tuling.service.HelloService;
+}
